@@ -2,33 +2,32 @@
  * @Author: xiongjian 
  * @Date: 2018-04-27 14:38:50 
  * @Last Modified by: xiongjian
- * @Last Modified time: 2018-04-27 16:03:15
+ * @Last Modified time: 2018-04-28 10:24:10
  */
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import MUtil from 'util/mm.jsx'
-// import User from 'service/user-service.jsx'
+import MUtil from 'util/mm.jsx'
+import User from 'service/user-service.jsx'
 
-// const _mm   = new MUtil();
-// const _user = new User();
+const _mm = new MUtil();
+const _user = new User();
 
 class NavTop extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            // username: _mm.getStorage('userInfo').username || ''
-            username: 'admin'
+            username: _mm.getStorage('userInfo').username || ''
         }
     }
     // 退出登录
     onLogout(){  
-    //     _user.logout().then(res => {
-    //         _mm.removeStorage('userInfo');
-    //         window.location.href = '/login';
-    //     }, errMsg => {
-    //         _mm.errorTips(errMsg);
-    //     });
+        _user.logout().then(res => {
+            _mm.removeStorage('userInfo');
+            window.location.href = '/login';
+        }, errMsg => {
+            _mm.errorTips(errMsg);
+        });
     }
     render(){
         return (
