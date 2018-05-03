@@ -2,7 +2,7 @@
  * @Author: xiongjian 
  * @Date: 2018-04-28 09:36:08 
  * @Last Modified by: xiongjian
- * @Last Modified time: 2018-04-28 11:57:39
+ * @Last Modified time: 2018-05-03 11:36:35
  */
 
 import MUtil from 'util/mm.jsx'
@@ -37,8 +37,8 @@ class User{
             }
         }
         return {
-            status : true,
-            msg : '验证通过'
+            status: true,
+            msg: '验证通过'
         }
     }
     // 退出登录

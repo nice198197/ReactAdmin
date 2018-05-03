@@ -91,17 +91,17 @@ module.exports = {
     ],
     devServer: {
         port: 8086,
-        historyApiFallback:{
+        historyApiFallback: {
             index: '/dist/index.html'
         },
-        proxy : {
-            '/manage' : {
+        proxy: {
+            '/manage': {
                 target: 'http://admintest.happymmall.com',
-                changeOrigin : true
+                changeOrigin: true
             },
-            '/user/logout.do' : {
+            '/user/logout.do': {
                 target: 'http://admintest.happymmall.com',
-                changeOrigin : true
+                changeOrigin: true
             }
         }
     }

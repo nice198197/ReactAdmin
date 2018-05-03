@@ -108,6 +108,14 @@ p {
 /*----------------------------------------------
    DASHBOARD STYLES    
 ------------------------------------------------*/
+.login_wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+}
 .page-header {
     padding-bottom: 9px;
     margin: 10px 0 20px;
@@ -472,14 +480,6 @@ footer p {
 .arrow {
     float: right;
     margin-top: 8px;
-}
-
-.fa.arrow:before {
-    content: "\f104";
-}
-
-.active > a > .fa.arrow:before {
-    content: "\f107";
 }
 
 .nav-second-level li,
