@@ -30,7 +30,7 @@ class UserList extends React.Component{
     }
     loadUserList(){
         _user.getUserList(this.state.pageNum).then(res => {
-            console.log(res)
+            console.log(11111111)
             this.setState(res);
         }, errMsg => {
             this.setState({
